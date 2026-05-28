@@ -79,10 +79,10 @@ export default function Contact() {
               Address
             </p>
             <p className="font-cn text-sm font-normal text-warm-white/50">
-              中国 · 北京
+              中国 · 上海
             </p>
             <p className="font-body text-xs font-normal text-warm-white/30 mt-1">
-              Beijing, China
+              Shanghai, China
             </p>
           </div>
         </div>

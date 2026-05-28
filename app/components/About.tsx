@@ -86,7 +86,7 @@ export default function About() {
                 <span className="font-medium text-navy-900">
                   Aestilith（潮汐基石）
                 </span>
-                ，成立于北京。品牌之名取意&ldquo;潮汐&rdquo;与&ldquo;基石&rdquo;——潮汐喻示商业周期之律动与时机洞察，基石象征战略咨询所应具备的稳固根基与长远价值。一动一静，一张一弛，是我们对商业世界的根本理解。
+                ，成立于上海。品牌之名取意&ldquo;潮汐&rdquo;与&ldquo;基石&rdquo;——潮汐喻示商业周期之律动与时机洞察，基石象征战略咨询所应具备的稳固根基与长远价值。一动一静，一张一弛，是我们对商业世界的根本理解。
               </p>
               <p className="font-body text-sm font-normal leading-relaxed text-navy-800/50">
                 The name Aestilith fuses <span className="italic">aestus</span>{" "}
