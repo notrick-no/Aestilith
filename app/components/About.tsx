@@ -2,10 +2,39 @@
 
 import { useEffect, useRef } from "react";
 
-const stats = [
-  { value: "20+", en: "Years Experience", cn: "年行业经验" },
-  { value: "300+", en: "Clients Served", cn: "服务客户" },
-  { value: "15", en: "Industry Sectors", cn: "覆盖行业" },
+const boxes = [
+  {
+    en: "Philosophy",
+    cn: "理念",
+    descEn:
+      "Long-term partnership, deep insight. We believe value is measured by time, not transactions.",
+    descCn:
+      "长期陪伴，深度洞察。以时间为尺，丈量价值。信守初心，行稳致远。",
+  },
+  {
+    en: "Focus Areas",
+    cn: "专注领域",
+    descEn:
+      "Strategic planning, operational excellence, organizational transformation, digital evolution.",
+    descCn:
+      "战略规划、运营优化、组织变革、数字化转型。覆盖消费、制造、科技、能源等核心赛道。",
+  },
+  {
+    en: "Approach",
+    cn: "方法论",
+    descEn:
+      "Global frameworks, local wisdom. Every solution is tailored — rigorous, tested, never off-the-shelf.",
+    descCn:
+      "国际视野，本土智慧。融合全球方法论与本土实践，每套方案皆为定制，拒绝模板化交付。",
+  },
+  {
+    en: "Commitment",
+    cn: "承诺",
+    descEn:
+      "We stay until results materialize. Strategy without execution is just a document.",
+    descCn:
+      "从战略设计到落地执行，全程陪伴。不交报告，交成果。",
+  },
 ];
 
 export default function About() {
@@ -37,79 +66,63 @@ export default function About() {
       id="about"
       className="relative py-32 lg:py-40 bg-cream overflow-hidden"
     >
-      {/* Subtle texture line */}
       <div className="absolute top-0 inset-x-0 gold-line opacity-30" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-          {/* Left — decorative element + section header */}
+        <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
+          {/* Left — company intro + name origin */}
           <div>
             <div className="reveal" style={{ transitionDelay: "0ms" }}>
               <div className="gold-line-left mb-8" />
               <p className="font-body text-xs tracking-[0.2em] uppercase text-gold-600 mb-4">
                 About Us
               </p>
-              <h2 className="font-cn text-3xl lg:text-4xl font-medium tracking-[0.04em] text-navy-900 mb-4">
+              <h2 className="font-cn text-3xl lg:text-4xl font-medium tracking-[0.04em] text-navy-900 mb-6">
                 关于潮汐基石
               </h2>
-              <p className="font-display text-xl font-light italic tracking-[0.02em] text-navy-700/50">
-                Where insight meets structure.
-              </p>
             </div>
-          </div>
-
-          {/* Right — content */}
-          <div className="space-y-6">
-            <div className="reveal" style={{ transitionDelay: "100ms" }}>
-              <p className="font-cn text-base font-light leading-relaxed text-navy-800/80">
+            <div className="reveal space-y-5" style={{ transitionDelay: "100ms" }}>
+              <p className="font-cn text-base font-normal leading-relaxed text-navy-800/80">
                 <span className="font-medium text-navy-900">
-                  潮汐基石企业管理咨询有限公司
+                  Aestilith（潮汐基石）
                 </span>
-                ，英文品牌名
-                <span className="font-display text-lg font-medium italic text-navy-900">
-                  {" "}
-                  astilith
-                </span>
-                ，是一家专注于战略管理与组织效能提升的综合型咨询机构。
+                ，成立于北京。品牌之名取意&ldquo;潮汐&rdquo;与&ldquo;基石&rdquo;——潮汐喻示商业周期之律动与时机洞察，基石象征战略咨询所应具备的稳固根基与长远价值。一动一静，一张一弛，是我们对商业世界的根本理解。
               </p>
-            </div>
-            <div className="reveal" style={{ transitionDelay: "200ms" }}>
-              <p className="font-body text-sm font-light leading-relaxed text-navy-800/60">
-                astilith is a strategic management consulting firm dedicated to
-                empowering organizations through insight-driven strategy,
-                structural excellence, and transformative leadership. We bridge
-                the gap between vision and execution — helping enterprises
-                navigate complexity, unlock growth, and build lasting
-                competitive advantage.
-              </p>
-            </div>
-            <div className="reveal" style={{ transitionDelay: "300ms" }}>
-              <p className="font-cn text-sm font-light leading-relaxed text-navy-800/60">
-                我们以&ldquo;洞察&rdquo;为锚点，以&ldquo;结构&rdquo;为方法论，为各行业领先企业提供从战略规划到落地执行的全周期管理咨询服务。无论您是寻求业务突破的成长型企业，还是面临转型挑战的成熟组织，潮汐基石都将是您最值得信赖的合作伙伴。
+              <p className="font-body text-sm font-normal leading-relaxed text-navy-800/50">
+                The name Aestilith fuses <span className="italic">aestus</span>{" "}
+                (tide) with <span className="italic">lith</span> (stone). Tides
+                embody rhythm, foresight, and the courage to move; stone embodies
+                structure, stability, and the wisdom to endure. Together they
+                define our philosophy: insight in motion, value in permanence.
               </p>
             </div>
           </div>
-        </div>
 
-        {/* Stats row */}
-        <div className="grid grid-cols-3 gap-8 mt-24 lg:mt-32">
-          {stats.map((s, i) => (
-            <div
-              key={s.en}
-              className="reveal text-center"
-              style={{ transitionDelay: `${i * 150}ms` }}
-            >
-              <p className="font-display text-4xl lg:text-5xl font-semibold text-navy-900 mb-2">
-                {s.value}
-              </p>
-              <p className="font-body text-xs font-light tracking-[0.05em] text-navy-700/60">
-                {s.en}
-              </p>
-              <p className="font-cn text-xs font-light text-navy-700/40 mt-0.5">
-                {s.cn}
-              </p>
+          {/* Right — icon boxes */}
+          <div className="flex flex-col justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {boxes.map((b, i) => (
+                <div
+                  key={b.en}
+                  className="reveal bg-warm-white/60 p-6 lg:p-8 hover:bg-warm-white transition-colors duration-500"
+                  style={{ transitionDelay: `${i * 100 + 200}ms` }}
+                >
+                  <h4 className="font-body text-sm font-medium tracking-[0.06em] uppercase text-navy-900 mb-2">
+                    {b.en}
+                  </h4>
+                  <p className="font-cn text-xs font-normal tracking-[0.04em] text-gold-600 mb-3">
+                    {b.cn}
+                  </p>
+                  <p className="font-cn text-sm font-normal leading-relaxed text-navy-800/65 mb-2">
+                    {b.descCn}
+                  </p>
+                  <p className="font-body text-xs font-normal leading-relaxed text-navy-800/40">
+                    {b.descEn}
+                  </p>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>

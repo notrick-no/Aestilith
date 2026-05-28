@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const links = [
   { href: "#about", en: "About", cn: "关于我们" },
   { href: "#services", en: "Services", cn: "核心服务" },
-  { href: "#advantages", en: "Advantages", cn: "优势亮点" },
+  { href: "#team", en: "Team", cn: "团队" },
   { href: "#contact", en: "Contact", cn: "联系我们" },
 ];
 
@@ -32,10 +33,18 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#hero"
-            className="flex items-baseline gap-2 group"
+            className="flex items-center gap-3 group"
           >
+            <Image
+              src="/logo.png"
+              alt="Aestilith"
+              width={40}
+              height={40}
+              className="shrink-0"
+              priority
+            />
             <span className="font-display text-2xl font-semibold tracking-[0.08em] text-warm-white">
-              astilith
+              Aestilith
             </span>
             <span className="font-cn text-sm font-light tracking-widest text-gold-500">
               潮汐基石
@@ -48,7 +57,7 @@ export default function Navbar() {
               <a
                 key={l.href}
                 href={l.href}
-                className="relative font-body text-sm font-light tracking-[0.05em] text-warm-white/70 hover:text-gold-400 transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative font-body text-sm font-normal tracking-[0.05em] text-warm-white/70 hover:text-gold-400 transition-colors duration-300 after:absolute after:-bottom-1 after:left-0 after:h-px after:w-0 after:bg-gold-500 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {l.en}
                 <span className="ml-1.5 text-xs text-muted hidden lg:inline">

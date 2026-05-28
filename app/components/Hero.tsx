@@ -45,39 +45,27 @@ export default function Hero() {
 
       {/* Main content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
-        {/* Chinese name first — subtle */}
-        <p className="font-cn text-sm font-light tracking-[0.3em] text-gold-500 mb-6 opacity-0 animate-[fadeUp_1s_ease-out_0.2s_forwards]">
-          潮汐基石企业管理咨询
+        {/* Chinese name */}
+        <p className="font-cn text-base font-normal tracking-[0.3em] text-gold-500 mb-6 opacity-0 animate-[fadeUp_1s_ease-out_0.2s_forwards]">
+          潮汐基石
         </p>
 
-        {/* Brand name — massive */}
-        <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-semibold tracking-[0.04em] text-warm-white mb-8 opacity-0 animate-[fadeUp_1s_ease-out_0.4s_forwards]">
-          astilith
+        {/* Brand name */}
+        <h1 className="font-display text-6xl sm:text-7xl lg:text-8xl font-semibold tracking-[0.04em] text-warm-white mb-10 opacity-0 animate-[fadeUp_1s_ease-out_0.4s_forwards]">
+          Aestilith
         </h1>
 
         {/* Gold divider */}
-        <div className="gold-line max-w-[200px] mx-auto mb-8 opacity-0 animate-[fadeUp_1s_ease-out_0.6s_forwards]" />
+        <div className="gold-line max-w-[160px] mx-auto mb-10 opacity-0 animate-[fadeUp_1s_ease-out_0.6s_forwards]" />
 
-        {/* Tagline */}
-        <p className="font-body text-lg sm:text-xl font-light tracking-[0.03em] text-warm-white/60 mb-4 opacity-0 animate-[fadeUp_1s_ease-out_0.8s_forwards]">
-          Strategic Management Consulting
+        {/* Quote */}
+        <p className="font-cn text-lg font-normal tracking-[0.05em] text-warm-white/50 mb-3 opacity-0 animate-[fadeUp_1s_ease-out_0.8s_forwards]">
+          知者不惑，仁者不忧，勇者不惧。
         </p>
-        <p className="font-cn text-base font-light tracking-[0.05em] text-warm-white/40 mb-12 opacity-0 animate-[fadeUp_1s_ease-out_1s_forwards]">
-          以洞察驱动战略，以结构塑造未来
+        <p className="font-body text-base font-normal tracking-[0.03em] text-warm-white/35 opacity-0 animate-[fadeUp_1s_ease-out_1s_forwards]">
+          The wise are free from doubt, the benevolent from anxiety, the
+          courageous from fear.
         </p>
-
-        {/* CTA */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-[fadeUp_1s_ease-out_1.2s_forwards]">
-          <a
-            href="#services"
-            className="group inline-flex items-center gap-3 px-8 py-3.5 border border-gold-500/40 text-gold-400 font-body text-sm font-medium tracking-[0.06em] uppercase hover:bg-gold-500/10 hover:border-gold-500/60 transition-all duration-500"
-          >
-            Explore Our Services
-            <span className="font-cn text-xs font-light tracking-widest text-gold-500/60 group-hover:text-gold-400 transition-colors">
-              探索服务
-            </span>
-          </a>
-        </div>
       </div>
 
       {/* Scroll indicator */}

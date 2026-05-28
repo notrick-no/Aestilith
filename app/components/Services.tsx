@@ -7,33 +7,33 @@ const services = [
     en: "Strategic Planning",
     cn: "战略规划",
     descEn:
-      "Define your north star. We facilitate executive alignment, market foresight, and actionable roadmaps that turn ambition into measurable outcomes.",
+      "Define the north star. Align leadership, sharpen foresight, and build roadmaps that turn ambition into results.",
     descCn:
-      "明确战略方向，凝聚核心共识。我们协助企业高管团队进行市场前瞻分析与可执行路线图设计，将愿景转化为可衡量的成果。",
+      "明确方向，凝聚共识。以前瞻视野与可执行路径，将愿景转化为可衡量的战略成果。",
   },
   {
     en: "Operational Excellence",
     cn: "运营卓越",
     descEn:
-      "Build systems that scale. From process redesign to performance management, we help organizations achieve efficiency without sacrificing agility.",
+      "Build systems that scale. Process redesign and performance systems for efficiency without sacrificing agility.",
     descCn:
-      "构建可扩展的运营体系。从流程再造到绩效管理，帮助组织在提升效率的同时保持敏捷与韧性。",
+      "构建可扩展的运营体系。从流程再造到绩效管理，实现效率与敏捷的兼得。",
   },
   {
     en: "Digital Transformation",
     cn: "数字化转型",
     descEn:
-      "Navigate the digital frontier. We guide enterprises through technology-enabled change — aligning tools, talent, and culture for the next era.",
+      "Navigate the digital shift. Align technology, talent, and culture for the next era of your enterprise.",
     descCn:
-      "引领数字化前沿。我们在技术驱动的变革中为企业导航，实现工具、人才与文化的三位一体协同进化。",
+      "引领数字化变革。在技术、人才与文化之间建立协同，为企业下一阶段增长奠基。",
   },
   {
     en: "Organization & Talent",
     cn: "组织与人才",
     descEn:
-      "Unlock human potential. We design org structures, leadership programs, and talent strategies that foster resilience, innovation, and sustainable growth.",
+      "Unlock human potential. Design structures and leadership programs that foster resilience and innovation.",
     descCn:
-      "释放人才潜力。通过组织架构设计、领导力发展与人才战略，培育韧性、创新力与可持续增长的文化基因。",
+      "释放人才潜力。通过组织设计与领导力发展，培育韧性、创新与可持续增长的文化土壤。",
   },
 ];
 
@@ -66,7 +66,6 @@ export default function Services() {
       id="services"
       className="relative py-32 lg:py-40 bg-navy-900 grain-overlay overflow-hidden"
     >
-      {/* Decorative element */}
       <div className="absolute top-12 right-[5%] w-32 h-32 border border-gold-500/5 rounded-full hidden lg:block" />
 
       <div className="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
@@ -97,17 +96,16 @@ export default function Services() {
               <h3 className="font-body text-xl font-medium tracking-[0.03em] text-warm-white mb-1">
                 {s.en}
               </h3>
-              <p className="font-cn text-sm font-light tracking-[0.04em] text-gold-500 mb-5">
+              <p className="font-cn text-sm font-normal tracking-[0.04em] text-gold-500 mb-4">
                 {s.cn}
               </p>
 
-              {/* Gold accent on hover */}
               <div className="w-8 h-px bg-gold-500/40 group-hover:w-16 transition-all duration-500 mb-5" />
 
-              <p className="font-cn text-sm font-light leading-relaxed text-warm-white/55 mb-3">
+              <p className="font-cn text-sm font-normal leading-relaxed text-warm-white/55 mb-3">
                 {s.descCn}
               </p>
-              <p className="font-body text-sm font-light leading-relaxed text-warm-white/35">
+              <p className="font-body text-sm font-normal leading-relaxed text-warm-white/35">
                 {s.descEn}
               </p>
             </div>
