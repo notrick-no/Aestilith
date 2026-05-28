@@ -4,19 +4,14 @@ import { useEffect, useRef } from "react";
 
 const team = [
   {
-    name: "Leo",
-    role: "Founding Partner",
-    cn: "创始合伙人",
-  },
-  {
     name: "Linzy",
     role: "Founding Partner",
-    cn: "创始合伙人",
+    cn: "联合创始人",
   },
   {
     name: "Chen",
-    role: "Associate",
-    cn: "顾问",
+    role: "Founding Partner",
+    cn: "联合创始人",
   },
 ];
 
@@ -65,7 +60,7 @@ export default function Team() {
         </div>
 
         {/* Team grid */}
-        <div className="grid grid-cols-3 max-w-2xl mx-auto gap-6">
+        <div className="grid grid-cols-2 max-w-lg mx-auto gap-6">
           {team.map((m, i) => (
             <div
               key={m.name}
