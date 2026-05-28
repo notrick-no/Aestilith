@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 
 const links = [
   { href: "#about", en: "About", cn: "关于我们" },
@@ -33,16 +32,8 @@ export default function Navbar() {
           {/* Logo */}
           <a
             href="#hero"
-            className="flex items-center gap-3 group"
+            className="flex items-baseline gap-2 group"
           >
-            <Image
-              src="/logo.png"
-              alt="Aestilith"
-              width={40}
-              height={40}
-              className="shrink-0"
-              priority
-            />
             <span className="font-display text-2xl font-semibold tracking-[0.08em] text-warm-white">
               Aestilith
             </span>
